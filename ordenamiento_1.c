@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int insertion_s(int a[],int n){
+int insertion_sort(int a[],int n){
 	for (int i=1;i<n;i++){
 	int key = a[i];
 	int j= i-1;
@@ -29,7 +29,7 @@ int main (){
 	}
 	printf("Numero ingresado: ");
 	pantalla(a,x);
-	insertion_s(a,x);
+	insertion_sort(a,x);
 	printf("numero ordenado: ");
 	pantalla(a,x);
 }
